@@ -3,7 +3,7 @@ const express = require('express');
 class Server {
         constructor() {
             this.app = express();
-            this.port = process.env.PORT;
+            this.port = process.env.PORT || 30000;
             this.usuariosPath = '/api/usuarios';
             // middlewares
             this.middlewares();
